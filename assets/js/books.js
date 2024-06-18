@@ -218,6 +218,17 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Close details button not found'); // Debug: vérifier que le bouton est trouvé
     }
+    
+    const ajoutLink = document.getElementById("ajout-link");
+     const ajoutForm = document.getElementById("ajout-container");
+     ajoutLink.addEventListener("click",function (){
+         ajoutForm.style.display = "flex";
+     });
+
+     const annulerAjout = document.getElementById("annuler-ajout");
+     annulerAjout.addEventListener("click",function (){
+         ajoutForm.style.display = "none";
+     });
 
     fetchLivres();
 });
