@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bibliothèque</title>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="nav-title">
+            Bibliothèque
+        </div>
+        <div class="link-container">
+            <div class="ajout-link" id="ajout-link">
+                Ajouter un livre
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- PARTIE DE LA FORMULAIRE D'AJOUT -->
+    <div class="formulaire-ajout">
+        <form action="./assets/php/index.php" class="ajout-container" id="ajout-container" method="post"> 
+                <div class="ajout-title" >
+                    Ajouter un livre
+                </div>
+                <input type="text" placeholder="Titre" id="Titre" required>
+                <input type="text" placeholder="Auteur" id="Auteur" required>
+                <input type="text" placeholder="Éditeur" id="Editeur" required>
+                <input type="text" placeholder="Isbn" id="Isbn" required>
+                <input type="file" placeholder="img" id="Img" required>
+                <input type="text" placeholder="Genre" id="Genre" required>
+                <input type="text" placeholder="Langue" id="Langue" required>
+                <input type="text" placeholder="Nombre de Pages" id="Nbrpg" required>
+                <input type="text" placeholder="Résumé" id="resume" required>
+                <select name="" id="dispo" >
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                </select>
+                <input type="text" placeholder="État" id="etat" required>
+                <input type="text" placeholder="emplacement" id="emplacement" required>
+                <div class="button-container-ajout">
+                    <div class="annuler-ajout" id="annuler-ajout">
+                        Annuler
+                    </div>
+                    <button class="ajouter-bouton" type="submit" id="ajouter">Ajouter</button>
+                </div>
+        </form>
+        
+    </div>
+
+
+    <!-- PARTIE CONTENANT LES LIVRES  -->
+    <div class="liste-livre-container">
+        <div class="liste-livre">
+            <div class="liste-livre-static">
+                <div class="liste-livre-title">
+                    Liste des livres
+                </div>
+                <div class="form-liste-livre">
+                    <div class="recherche-livre">
+                        <select name="" id="type-recherche" class="type-recherche">
+                            <option value="titre">Titre</option>
+                            <option value="auteur">Auteur</option>
+                            <option value="genre">Genre</option>
+                            <option value="langue">Langue</option>
+                            <option value="dispo">Disponibilité</option>
+                            <option value="etat">Etat</option>
+                            <option value="emplacement">Emplacement</option>
+                            <option value="resume">Résumé</option>
+                            <option value="nbrpg">Nombre de pages</option>
+                            <option value="isbn">Isbn</option>
+                        </select>
+                        <input type="text" placeholder="Rechercher un livre">
+                        <button class="rechercher-bouton">Rechercher</button>
+                    </div>
+                    <div class="liste-genres">
+                        <div class="genre">
+                            Tous
+                        </div>
+                        <div class="genre">
+                            Romance
+                        </div>
+                        <div class="genre">
+                            Policier
+                        </div>
+                        <div class="genre">
+                            Sci-fi
+                        </div>
+                        <div class="genre">
+                            Aventure
+                        </div>
+                        <div class="genre">
+                            Autre
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="liste-livre-dynamic">
+                
+            </div>  
+            <div class="pagination">
+                <button id="page-precedente">Précédente</button>
+                <button id="page-suivante">Suivante</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- DÉTAILS DU LIVRE SÉLÉCTIONNÉ -->
+
+    <div class="main-details">
+        <div class="livre-details-container hidden" id="livre-details-container">
+            <div class="details-title">
+                Détails
+            </div>
+            <div class="livre-quitter-details livre-details-fermer" id="quitter-details">
+                Quitter
+            </div>
+            <div class="img-container-details">
+                <div class="livre-image-details" style="
+                    background: url(./assets/img/1.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                ">
+            </div>
+           
+    
+            </div>
+            <div class="livre-details-texts">
+                <div class="livre-titre-details">
+                    Titre
+                </div>
+                <div class="livre-auteur-details">
+                    Auteur : Nom
+                </div>
+                <div class="livre-genre-details">
+                    Genre : Sci-fi
+                </div>
+                <div class="livre-editeur-details">
+                    Editeur : Nom
+                </div>
+                <div class="livre-resume-details">
+                    Résumé : Long résumé du livre
+                </div>
+                <div class="livre-langue-details">
+                    Langue : Français
+                </div>
+                <div class="livre-disponibilite-details">
+                   Disponibilité : Oui
+                </div>
+                <div class="livre-nombre-page-details">
+                    Pages : 189
+                </div>
+                <div class="livre-etat-details">
+                    Etat : Endommagé
+                </div>
+                <div class="livre-emplacement-details">
+                    Emplacement : Réservé
+                </div>
+                <div class="livre-boutons-details">
+                    <a href="" class="link" style="text-decoration: none;color:#fff;">
+                        <div class="livre-supprimer-details" id="supprimer">
+                            Supprimer
+                        </div>
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+   
+    <script src="./assets/js/books.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+    "livres": [
+        {
+            "titre": "Orgeuil et Pr\u00e9gug\u00e9s",
+            "auteurs": [
+                "George Orwell"
+            ],
+            "isbn": "978-2-07-036822-8",
+            "image": ".\/assets\/img\/1.jpeg",
+            "editeur": "Gallimard",
+            "datePublication": "1949",
+            "genre": "Dystopie, Science-fiction",
+            "resume": "Un homme lutte contre un r\u00e9gime totalitaire oppressif dirig\u00e9 par Big Brother.",
+            "langue": "Fran\u00e7ais",
+            "nombrePages": 368,
+            "disponibilite": false,
+            "etat": "Endommag\u00e9",
+            "emplacement": "R\u00e9serves"
+        },
+        {
+            "titre": "1984",
+            "auteurs": [
+                "George Orwell"
+            ],
+            "isbn": "978-2-07-036822-8",
+            "image": "..\/assets\/img\/2.jpeg",
+            "editeur": "Gallimard",
+            "datePublication": "1949",
+            "genre": "Dystopie, Science-fiction",
+            "resume": "Un homme lutte contre un r\u00e9gime totalitaire oppressif dirig\u00e9 par Big Brother.",
+            "langue": "Fran\u00e7ais",
+            "nombrePages": 368,
+            "disponibilite": false,
+            "etat": "Endommag\u00e9",
+            "emplacement": "R\u00e9serves"
+        },
+        {
+            "titre": "Titre",
+            "auteurs": [
+                "George Orwell"
+            ],
+            "isbn": "978-2-07-036822-8",
+            "image": "..\/assets\/img\/3.jpeg",
+            "editeur": "Gallimard",
+            "datePublication": "1949",
+            "genre": "Dystopie, Science-fiction",
+            "resume": "Un homme lutte contre un r\u00e9gime totalitaire oppressif dirig\u00e9 par Big Brother.",
+            "langue": "Fran\u00e7ais",
+            "nombrePages": 368,
+            "disponibilite": false,
+            "etat": "Endommag\u00e9",
+            "emplacement": "R\u00e9serves"
+        },
+        {
+            "titre": "Titre2",
+            "auteurs": [
+                "George Orwell"
+            ],
+            "isbn": "978-2-07-036822-8",
+            "image": "..\/assets\/img\/4.jpeg",
+            "editeur": "Gallimard",
+            "datePublication": "1949",
+            "genre": "Dystopie, Science-fiction",
+            "resume": "Un homme lutte contre un r\u00e9gime totalitaire oppressif dirig\u00e9 par Big Brother.",
+            "langue": "Fran\u00e7ais",
+            "nombrePages": 368,
+            "disponibilite": false,
+            "etat": "Endommag\u00e9",
+            "emplacement": "R\u00e9serves"
+        },
+        {
+            "titre": "Amour",
+            "auteurs": [
+                "George Orwell"
+            ],
+            "isbn": "978-2-07-036822-8",
+            "image": "..\/assets\/img\/5.jpeg",
+            "editeur": "Gallimard",
+            "datePublication": "1949",
+            "genre": "Dystopie, Science-fiction",
+            "resume": "Un homme lutte contre un r\u00e9gime totalitaire oppressif dirig\u00e9 par Big Brother.",
+            "langue": "Fran\u00e7ais",
+            "nombrePages": 368,
+            "disponibilite": false,
+            "etat": "Endommag\u00e9",
+            "emplacement": "R\u00e9serves"
+        }
+    ]
+}
